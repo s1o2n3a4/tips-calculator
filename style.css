@@ -68,5 +68,5 @@ border: none;
     color:var(--clr-white) ;
     font-size: var(--font-input-size);
     flex: 1;
-
+    font-size: 14px;
 }
