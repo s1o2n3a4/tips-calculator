@@ -55,11 +55,15 @@ label, input{
    padding: 10px 20px;
   background-color: var(--clr-neutral-4);
 border: none;
+font-family: var(--primary-font);
+color: var(--clr-neutral-1);
+font-size: var(--font-input-size);
+text-align: right;
 }
 .tips-group{
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    
 }
 .tips-group .button{
     background-color: var(--clr-neutral-1);
@@ -67,7 +71,60 @@ border: none;
     border: none;
     color:var(--clr-white) ;
     font-size: var(--font-input-size);
-    flex: 1;
+    width: calc(33.33% - 20px);
     font-size: 14px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-family: var(--primary-font);
+}
+.tips-group .button:hover{
+    background-color: var(--clr-neutral-4);
+    color: var(--clr-neutral-1);
+    cursor: pointer;
+    transform: all 0.2s;
 }
 
+.calculation-result{
+    background-color: var(--clr-neutral-1);
+    box-sizing: border-box;
+    width: 50%;
+    padding: 30px 40px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.calculation-amount{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.main-title{
+    color: var(--clr-neutral-4);
+    font-size: 18px;
+}
+.sub-title{
+    color: var(--clr-neutral-3);
+    font-size: 14px;
+}
+.amount{
+    font-size: 30px;
+    color: var(--clr-primary);
+}
+.calculation-result .button{
+    width: 100%;
+    padding: 10px 20px;
+    margin-top: auto;
+    background-color: var(--clr-neutral-4);
+    font-family: var(--primary-font);
+    border: none;
+    text-transform: uppercase;
+    border-radius: 10px;
+    font-size: 18px;
+
+}
+.calculation-result .button:hover {
+    background-color:var(--clr-primary) ;
+    cursor: pointer;
+    transition: all 0.1s;
+    color: var(--clr-neutral-4);
+}
